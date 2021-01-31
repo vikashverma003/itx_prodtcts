@@ -27,6 +27,7 @@
                   <a class="nav-link" href="{{url('login')}}" style="color:#e69d2b;">LOGIN</a>
                 </li> 
              @endguest
+             <li><button class="btn btn-large sign-in sign-up" onclick="showLoginModal();">MODO In </button></li>
              @guest
                  @if (Route::has('register'))<li class="nav-item create-account">
                   <a class="nav-link" href="{{ url('register_user') }}">CREATE AN ACCOUNT</a>
@@ -44,5 +45,10 @@
               </ul>
             </div>
           </nav>
+                                      @include('frontend.includes.login-modal')
+                                       @include('frontend.includes.signup-modal')
+
+                            @include('frontend.includes.forgot-password')
+
         </div>
       </header>

@@ -18,6 +18,7 @@
 Auth::routes();
 
 
+Route::get('/user/verify/{token}', 'frontend\UserController@verifyUser');
 
 Route::get('/','frontend\HomeController@index');
 Route::get('/about_us','frontend\HomeController@about_us');
@@ -30,9 +31,11 @@ Route::middleware(['auth'])->group(function () {
 
 
 });
-
-
-
 Route::get('/register_user','frontend\UserController@show_view');
 Route::post('/register_user/store','frontend\UserController@store')->name('register_user.store');
+Route::get('/user_details','frontend\HomeController@user_details');
 
+Route::post('/user_details/store','frontend\HomeController@user_details_store');
+
+
+// https://5balloons.info/user-email-verification-and-account-activation-in-laravel-5-5/

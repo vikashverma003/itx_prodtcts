@@ -1,4 +1,5 @@
 @extends('frontend.layouts.app')
+@section('title', 'Login-Page')
 
 @section('content')
  <main id="inner-body-content" class="padd-t-142 padd-b-60">
@@ -15,7 +16,7 @@
                 <form method="post" action="{{url('login_user/check')}}">
                     @csrf
                   <div class="form-grouph input-design">
-                    <input type="email" placeholder="Email" name="email" required>
+                    <input type="email" placeholder="Email" name="email" >
                   </div>
                   <div class="form-grouph input-design">
                     <input type="password" placeholder="Password" name="password" required>

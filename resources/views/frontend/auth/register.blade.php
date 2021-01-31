@@ -1,5 +1,5 @@
 @extends('frontend.layouts.app')
-
+@section('title', 'Register')
 @section('content')
  <main id="inner-body-content" class="padd-t-142 padd-b-60">
           <section class="page-title">

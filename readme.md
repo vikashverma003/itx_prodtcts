@@ -1,3 +1,8 @@
+Implementaion of the email verification and making the page's js and css seprate for each page and common for all 
+
+the pages . And also adding the common header and footer also the whole things.
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
